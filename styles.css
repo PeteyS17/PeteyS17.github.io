@@ -20,7 +20,8 @@ h1 {
 border-radius: 20px; /* curved corners */
 }
 a{
-text-decoration: none; /* remove underlining on anchor tags */ color: midnightblue; /* pick the color you want */
+text-decoration: none; /* remove underlining on anchor tags */ 
+    color: rgb(79, 78, 79); /* pick the color you want */
 }
 .assign img {
 padding: 10px; /* change this from margin to padding */
