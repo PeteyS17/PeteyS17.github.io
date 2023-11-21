@@ -16,3 +16,10 @@ h1 {
     width: 200px;
     padding: 10px;
 }
+.assign {
+border-radius: 20px; /* curved corners */
+}
+Explain a:hover, img:hover, h1:hover a:hover {
+text-decoration: none; 
+color: salmon; 
+}
