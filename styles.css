@@ -32,3 +32,17 @@ a:hover {
 text-decoration: none; 
 color: salmon; 
 }
+.assign {
+width: 20%;
+box-shadow: 8px 8px [pick a color];
+display: block; /* instead of flex */ 
+border-radius: 20px; /* set last assignment */
+}
+body {
+display: flex;
+flex-wrap: wrap;
+}
+h1 {
+width: 100%;
+display: block; 
+}
