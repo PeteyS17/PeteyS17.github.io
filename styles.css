@@ -19,7 +19,15 @@ h1 {
 .assign {
 border-radius: 20px; /* curved corners */
 }
-Explain a:hover, img:hover, h1:hover a:hover {
+a{
+text-decoration: none; /* remove underlining on anchor tags */ color: midnightblue; /* pick the color you want */
+}
+.assign img {
+padding: 10px; /* change this from margin to padding */
+border: 2px solid midnightblue; /* try dashed, dotted */ 
+}
+Explain a:hover, img:hover, h1:hover 
+a:hover {
 text-decoration: none; 
 color: salmon; 
 }
