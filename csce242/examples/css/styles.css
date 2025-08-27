@@ -2,14 +2,36 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-div{
-    background:coral;
+#content{
+    background:rgb(158, 175, 236);
     width:70%;
+    margin:auto;  /*center*/
+    padding: 1%; /* get text away from the edge*/
+    border-radius: 5px; /* round corners */
+
+}
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border:1px solid crimson;
+    padding: 5px 10px; /* top and bottom 5, right and left 10 */
 }
 
+/*Images*/
+
+#whale-pic {
+    box-shadow: 7px 7px gray;
+}
+
+th{
+    background: coral;
+
+}
 /* Typography */
 h1 {
-    color:blue;
+    color:rgb(232, 94, 140);
 }
 h2 {
     color:chartreuse;
