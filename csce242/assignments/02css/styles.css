@@ -27,29 +27,9 @@ h2 {
 
 
 
-/* Assignment links (main page) */
-ol {
-    list-style: none;        /* remove numbers */
-    padding: 0;
-    text-align: center;      /* center links */
-}
 
-ol li {
-    display: inline-block;
-    margin: 0 15px;
-}
 
-ol li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #d62828; /* red */
-}
-
-ol li a:hover {
-    color: #ffb703; /* golden yellow */
-}
-
-/* Images (assignment 2) */
+/* Images  */
 #images-content {
     display: flex;
     gap: 15px;
@@ -65,7 +45,7 @@ ol li a:hover {
     background-color: #ff9999;
 }
 
-/* Table (assignment 2) */
+/* Table  */
 #missions {
     width: 100%;
     border-collapse: collapse;
