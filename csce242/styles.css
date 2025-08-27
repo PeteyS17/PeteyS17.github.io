@@ -1,0 +1,47 @@
+/* General page styling */
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background:url("images/code.jpeg");
+    background-size:cover;
+    color: rgb(50, 132, 241);
+
+}
+/* Container for readable content */
+#content {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #727272;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Headings */
+h1 {
+    color: #1a3d6d;
+    text-align: center;
+}
+
+h2 {
+    color: #2c6e91;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;   /* removes underline */
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ol {
+    list-style: none;        /* remove numbers */
+    padding: 0;
+    text-align: center;      /* center the items */
+}
