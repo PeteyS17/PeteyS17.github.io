@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:url(images/Colombian\ Flag.png);
+}
+
+/* Shared content container */
+ #content {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(103, 180, 247, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h1 {
+    color: #0033a0; /* deep blue */
+    text-align: center;
+}
+
+h2 {
+    color: #d62828; /* red */
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/* Assignment links (main page) */
+ol {
+    list-style: none;        /* remove numbers */
+    padding: 0;
+    text-align: center;      /* center links */
+}
+
+ol li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+ol li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #d62828; /* red */
+}
+
+ol li a:hover {
+    color: #ffb703; /* golden yellow */
+}
+
+/* Images (assignment 2) */
+#images-content {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#images-content img {
+    width: 45%;
+    border: 3px solid #0033a0; /* blue border */
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ff9999;
+}
+
+/* Table (assignment 2) */
+#missions {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#missions th, #missions td {
+    border: 1px solid #0033a0; /* blue */
+    padding: 10px;
+    text-align: center;
+}
+
+#missions th {
+    background-color: #d62828; /* red */
+    color: #fff;
+}
+
+#missions tr:nth-child(even) {
+    background-color: #ffef99; /* light yellow */
+}
