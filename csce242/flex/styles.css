@@ -19,10 +19,12 @@ body {
 
 }
 
+
 /* Main Navigation */
 
 #main-nav ul {
     list-style-type: none; /* remove the bullets*/
+    padding-left: 0;
 }#main-nav li {
     border-bottom: 1px solid white;
    
@@ -37,6 +39,10 @@ body {
     text-decoration: none; /* no underlines */
 }
 
+#main-nav a:hover {
+    background: white;
+    color:#A69D24;
+}
 /*Typography */
 h1 {
     text-align: center;
@@ -49,6 +55,26 @@ h1 {
     }
     #content{
         width: 70%;
+    }
+    .columns {
+        display: flex;
+    }
+    #main-nav li {
+        flex: 1;
+    }
+    #main-nav li, #main-nav li:first-child {
+        border: none;
+    }
+
+    #main-nav a {
+        text-align: center;
+        padding: 5px;
+    }
+    #main-nav a:hover {
+        background: #A69D24;
+        color: white;
+        border-bottom: 1px solid white;
+
     }
 
 }
