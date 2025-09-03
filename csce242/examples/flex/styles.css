@@ -47,6 +47,9 @@ body {
 h1 {
     text-align: center;
 }
+.hide {
+    display: none;
+}
 /* Larger devices*/
 @media only screen and (min-width: 768px) {
     body{ 
@@ -59,6 +62,21 @@ h1 {
     .columns {
         display: flex;
     }
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }
+
+    .three{
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+    /*main nav*/
     #main-nav li {
         flex: 1;
     }
