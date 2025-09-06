@@ -58,7 +58,7 @@ h2 {
 }
 
 /* Assignment Cards */
-.assignments {
+.assignments, .projects {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;

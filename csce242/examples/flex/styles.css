@@ -1,3 +1,7 @@
+:root {
+    --primary-color:#4F5902;
+    --secondary-color:#595924;
+}
 body {
     
     background:#576E26 ;
@@ -19,8 +23,29 @@ body {
 
 }
 
+/* SHowcase*/
+#showcase {
+    position: relative;
+}
+#showcase p {
+    background:rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    width: fit-content;
+
+    position:relative;
+    top: 0;
+    left: 0;
+}
 
 /* Main Navigation */
+nav ul {
+
+}
+
+nav a{ 
+
+}
 
 #main-nav ul {
     list-style-type: none; /* remove the bullets*/
@@ -42,6 +67,10 @@ body {
 #main-nav a:hover {
     background: white;
     color:#A69D24;
+}
+
+#login-nav{
+    
 }
 /*Typography */
 h1 {
