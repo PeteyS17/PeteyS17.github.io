@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Introduction to JavaScript — Sunny Times / Color / Image</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+
+  <header class="page-header">
+      <h1 class="title">Introduction to JavaScript</h1>
+      <div class="subtitle">Sunny Times • Select a Color • Image Change</div>
+    </a>
+  </header>
+
+  <main class="grid-3">
+    <!-- Column 1 -->
+    <section class="card clickable" id="sunnyCard" tabindex="0" role="button" aria-label="Sunny Times (click)">
+        <h2 class="card-title">Sunny Times:</h2>
+        <div id="lyrics" class="lyrics" aria-live="polite"></div>
+      </section>
+
+    <!-- Column 2 -->
+    <section class="card">
+      <h2 class="card-title">Select a Color</h2>
+
+      <div class="form-row">
+        <label class="label" for="picker">Color</label>
+        <div class="control">
+          <div class="swatch">
+            <input id="picker" type="color" value="#3ecf8e" aria-label="Pick a color" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Only the emotion image appears after color is chosen -->
+      <img id="img-emotion" class="hidden emotion" alt="Emotion" src="images/emotion.png">
+    </section>
+
+    <!-- Column 3 -->
+    <section class="card">
+        <h2 class="card-title">Image Change</h2>
+        <p class="hint">Click the image to switch rain ↔ sunny.</p>
+      
+        <div class="img-wrap">
+          <!-- Start with the rainy image -->
+          <img id="scene" class="hero" src="images/rain.png" alt="Rainy scene" />
+
+        </div>
+      </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Each image and the title link to your main page. Replace the URL before submitting.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

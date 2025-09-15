@@ -1,0 +1,171 @@
+/* === STARTER RESET CSS === */
+/* Adapted from Josh Comeau’s Custom CSS Reset:
+   https://www.joshwcomeau.com/css/custom-css-reset/ */
+   *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  /* === END RESET CSS === */
+  
+  /* === YOUR PROJECT STYLES START HERE === */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f9ff;         /* light blue background */
+    color: #0f172a;
+    min-height: 100vh;
+  }
+  
+  /* Layout */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 860px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Header */
+  .page-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: linear-gradient(90deg, #3b82f6, #2563eb); /* blue gradient */
+    color: white;
+    border-radius: 12px;
+  }
+  .title {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  .subtitle {
+    opacity: 0.9;
+  }
+  
+  /* Cards */
+  .card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8; /* cyan border on hover */
+  }
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    color: #2563eb; /* blue title */
+  }
+  .card.clickable {
+    cursor: pointer; /* make sunny card clickable */
+  }
+  
+  /* Sunny Times */
+  .lyrics {
+    min-height: 6rem;
+    border: 2px dashed #93c5fd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #eff6ff;
+    display: grid;
+    gap: 6px;
+  }
+  .lyrics p {
+    line-height: 1.2;
+    color: #1e3a8a;
+    font-weight: 600;
+  }
+  
+  /* Color picker */
+  .form-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+  }
+  .label {
+    font-weight: 600;
+    color: #475569;
+  }
+  .swatch {
+    width: 48px;
+    height: 34px;
+    border: 2px solid #38bdf8;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  input[type="color"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  .emotion {
+    width: 100px;
+    margin-top: 12px;
+    border: 2px solid #facc15;
+    border-radius: 50%;
+    background: #fefce8;
+    padding: 4px;
+  }
+  
+  /* Image change */
+  .img-wrap {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px;
+    background: #f0fdf4;
+  }
+  .hero {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .hero:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(34,197,94,0.3);
+  }
+  
+  /* Footer */
+  .page-footer {
+    text-align: center;
+    color: #475569;
+    margin-top: 24px;
+    font-size: .95rem;
+  }
+  
