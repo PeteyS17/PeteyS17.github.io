@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Assignment 6 — If Statements</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="content">
+    <section class="card">
+      <h1>Assignment 6</h1>
+      <h3>If Statements</h3>
+
+      <div class="tabs">
+        <a href="#" id="tab-ex1">Exercise 1</a>
+        <span class="sep">|</span>
+        <a href="#" id="tab-ex2">Exercise 2</a>
+      </div>
+
+      <!-- Exercise 1: Planting -->
+      <div id="exercise1">
+        <div class="box">
+          <p class="prompt">How many days has it been since watering your plant?</p>
+          <input id="daysRange" type="range" min="1" max="12" step="1" value="1" />
+          <img id="plantImg" src="images/plant1.png" alt="plant status" />
+          <p id="line1" class="line"></p>
+          <p id="line2" class="line"></p>
+        </div>
+
+      </div>
+
+      <!-- Exercise 2: Digital Clock -->
+      <div id="exercise2" class="hidden">
+        <div class="box">
+          <p class="prompt">Our Digital Clock</p>
+          <div id="clockFace" class="clock">--:-- am</div>
+        </div>
+    
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; PeteyS17.github.io </p>
+  </footer>
+  <script src="js/conditionals.js"></script>
+</body>
+</html>
