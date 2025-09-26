@@ -1,0 +1,280 @@
+:root {
+    --page-bg:#87fbc9;
+    --card:#3ec7c1;
+    --frame:#fff;
+    --frame-accent:#2a5bff;
+
+    --sky-day:#b9dde9;
+    --night:#000;
+
+    --sun:#ffd000;
+    --moon:#efe9aa;
+
+    --leaf:#0c730a;
+    --trunk:#8a4b2a;
+
+    --title:#6ea0a6;
+    --subtitle:#ea8591;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background:var(--page-bg);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width:min(1200px, 96%);
+    margin:0 auto;
+    padding:8px 10px;
+}
+
+.scene-card {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    max-width:1100px;
+    margin:8vh auto;
+    background:var(--card);
+    border-radius:12px;
+    padding:18px 22px;
+    box-shadow:0 10px 24px rgba(0,0,0,.18);
+}
+
+.stage-frame {
+    width:min(980px, 100%);
+    background:var(--frame);
+    border:3px solid var(--frame-accent);
+    border-radius:10px;
+    padding:10px;
+}
+
+.stage {
+    position:relative;
+    width:100%;
+    height:clamp(280px, 48vw, 420px);
+    border-radius:8px;
+    overflow:hidden;
+    background:var(--sky-day);
+}
+
+#scene-nav {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.labels {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.title {
+    font-weight:800;
+    font-size:2rem;
+    color:var(--title);
+}
+
+.subtitle {
+    font-weight:800;
+    font-size:1.3rem;
+    color:var(--subtitle);
+}
+
+.pill {
+    padding:6px 12px;
+    border:1px solid #bbb;
+    border-radius:6px;
+    background:#fff;
+    cursor:pointer;
+}
+
+.row {
+    position:absolute;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:0 16px;
+}
+
+.clouds-row {
+    top:30%;
+}
+
+.trees-row {
+    top:65%;
+}
+
+.sun, .moon {
+    z-index:3;
+    position:absolute;
+    right:3.5rem;
+    top:2.2rem;
+}
+
+.cloud {
+    z-index:2;
+}
+
+.tree, .tree {
+    z-index:1;
+}
+
+
+.sun {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:var(--sun);
+}
+
+.moon {
+    width:86px;
+    height:86px;
+    border-radius:50%;
+    background:var(--moon);
+    box-shadow:0 0 30px rgba(242,234,154,.35);
+}
+
+/* CSS ART source (Clouds):
+   https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html */
+.cloud {
+    position:relative;
+    width:120px;
+    height:40px;
+    background:#fff;
+    border-radius:50px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.cloud:before, .cloud:after {
+    content:"";
+    position:absolute;
+    background:#fff;
+    border-radius:50%;
+    width:70px;
+    height:70px;
+    top:-35px;
+}
+
+.cloud:before {
+    left:10px;
+}
+
+.cloud:after {
+    right:10px;
+}
+
+/* CSS ART source (Trees): I asked chatgpt how to make the trees  */
+.tree {
+    position:relative;
+    width:90px;
+}
+
+.tree .canopy {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--leaf);
+}
+
+.tree .trunk {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:18px;
+    height:34px;
+    border-radius:6px;
+    background:var(--trunk);
+    top:42px;
+}
+
+
+@media (min-width:600px) {
+    .row {
+        padding:0 28px;
+    }
+    .sun {
+        width:130px;
+        height:130px;
+    }
+    .moon {
+        width:110px;
+        height:110px;
+    }
+    .cloud {
+        width:160px;
+        height:54px;
+    }
+    .cloud:before, .cloud:after {
+        width:90px;
+        height:90px;
+        top:-45px;
+    }
+    .tree {
+        width:100px;
+    }
+    .tree .canopy {
+        width:80px;
+        height:80px;
+    }
+    .tree .trunk {
+        width:24px;
+        height:40px;
+        top:58px;
+    }
+}
+
+@media (min-width:768px) {
+    .labels {
+        flex-direction:row;
+        gap:16px;
+    }
+}
+
+@media (min-width:12000px) {
+    .row {
+        padding:0 40px;
+    }
+    .sun {
+        width:150px;
+        height:150px;
+    }
+    .moon {
+        width:130px;
+        height:130px;
+    }
+    .cloud {
+        width:180px;
+        height:60px;
+    }
+    .cloud:before, .cloud:after {
+        width:100px;
+        height:100px;
+        top:-50px;
+    }
+    .tree {
+        width:110px;
+    }
+    .tree .canopy {
+        width:90px;
+        height:90px;
+    }
+    .tree .trunk {
+        width:28px;
+        height:46px;
+        top:66px;
+    }
+}
