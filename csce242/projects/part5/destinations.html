@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Find your dream destination — Beyond Boarders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div class="header-bar">
+        <div class="logo"><img src="images/bblogo.png" alt="Beyond Boarders Logo"></div>
+        <h1>Beyond Boarders</h1>
+        <div class="profile"><img src="images/profile.jpeg" alt="Profile"><p class="profile-name">Petey</p></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="toggle-nav"><div></div><div></div><div></div></label>
+
+      <nav id="main-nav">
+        <ul class="columns hide-small">
+          <li><a href="index.html">Home</a></li>
+          <li class="is-current"><a href="destinations.html">Find your dream destination</a></li>
+          <li><a href="activities.html">Activities & Attractions</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="idea">
+        <h2>Which best fits you?</h2>
+        <p>Pick a travel style to narrow options quickly.</p>
+        <div class="examples">
+          <section>All</section>
+          <section>Beach & Relax</section>
+          <section>City & Culture</section>
+          <section>Mountains & Trails</section>
+          <section>Budget-friendly</section>
+          <section>Family</section>
+          <section>Solo</section>
+        </div>
+      </section>
+
+      <section class="idea">
+        <h2>Results</h2>
+        <div class="gallery columns">
+          <a class="tile tile--link" href="chicago.html">
+            <img src="images/oldtown.jpeg" alt="Historic city center" loading="lazy">
+            <p>Historic City</p>
+          </a>
+          <div class="tile">
+            <img src="images/coastaltown.jpeg" alt="Sunny coastal town" loading="lazy">
+            <p>Coastal Town</p>
+          </div>
+          <div class="tile">
+            <img src="images/mountvilage.jpeg" alt="Mountain village with trails" loading="lazy">
+            <p>Mountain Village</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> PeteyS17.github.io — Beyond Boarders</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

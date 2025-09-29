@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Activities & Attractions — Beyond Boarders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div class="header-bar">
+        <div class="logo"><img src="images/bblogo.png" alt="Beyond Boarders Logo"></div>
+        <h1>Beyond Boarders</h1>
+        <div class="profile"><img src="images/profile.jpeg" alt="Profile"><p class="profile-name">Petey</p></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="toggle-nav"><div></div><div></div><div></div></label>
+
+      <nav id="main-nav">
+        <ul class="columns hide-small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Find your dream destination</a></li>
+          <li class="is-current"><a href="activities.html">Activities & Attractions</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="idea">
+        <h2>Activities &amp; Attractions</h2>
+        <p>Discover cultural landmarks, outdoor adventures, and relaxing escapes.</p>
+      </section>
+
+      <section class="idea">
+        <h2>Filter by type</h2>
+        <div class="examples">
+          <section>All</section>
+          <section>Culture</section>
+          <section>Outdoors</section>
+          <section>Family</section>
+          <section>Food & Drink</section>
+          <section>Relaxation</section>
+        </div>
+      </section>
+
+      <section class="gallery columns">
+        <a class="tile tile--link" href="chicago.html#attractions">
+          <img src="images/the lourve.jpeg" alt="Museum glass pyramid at dusk" loading="lazy">
+          <p>World Museum (Culture)</p>
+        </a>
+        <div class="tile">
+          <img src="images/smoky.jpeg" alt="Mountain ridge hiking trail" loading="lazy">
+          <p>Mountain Trail (Outdoors/Family)</p>
+        </div>
+        <div class="tile">
+          <img src="images/DRbeach.jpeg" alt="Turquoise beach with palms" loading="lazy">
+          <p>Coastal Beach (Relaxation/Food)</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> PeteyS17.github.io — Beyond Boarders</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
