@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 09 — Classes</title>
+
+  <link rel="stylesheet" href="styles.css" />
+<!-- W3Schools: W3.CSS stylesheet -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>Assignment 09</h1>
+      <h2>Classes</h2>
+    </header>
+
+    <main>
+      <section id="painting-list" aria-label="Paintings gallery"></section>
+    </main>
+
+    <footer class="page-footer">
+        <p>All paintings come form "https://pixabay.com"</p>
+      <small>&copy; PeteyS17</small>
+    </footer>
+  </div>
+
+  <!-- W3Schools: Modal  -->
+  <div id="paintingModal" class="w3-modal" aria-hidden="true">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal">
+        <span class="w3-button w3-display-topright" id="modalClose" aria-label="Close">&times;</span>
+        <h2 id="modalTitle" class="w3-margin-0"></h2>
+        <p id="modalArtist" class="w3-margin-0"></p>
+      </header>
+      <div class="w3-container w3-padding">
+        <figure class="modal-figure">
+          <img id="modalImage" alt="">
+          <figcaption id="modalCaption" class="w3-small w3-text-grey"></figcaption>
+        </figure>
+      </div>
+      <footer class="w3-container w3-light-grey w3-padding">
+        <button class="w3-button w3-teal" id="modalCloseBtn">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/classes.js" ></script>
+</body>
+</html>

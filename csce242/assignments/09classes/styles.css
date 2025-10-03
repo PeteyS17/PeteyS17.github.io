@@ -1,0 +1,37 @@
+html,body{margin:0;padding:0}
+body{background:#eef2e0;font-family:Arial,Helvetica,sans-serif;color:#2b2b2b}
+
+.page{max-width:1400px;margin:0 auto;padding:18px 16px 48px}
+
+.page-header{text-align:center;margin:8px 0 16px}
+.page-header h1{color:#3b6d78;font-size:2.6rem;margin:.2rem 0}
+.page-header h2{color:#c65a5a;font-size:1.8rem;font-weight:600;margin:.2rem 0 26px}
+
+.credit{text-align:center;margin:10px 0 0}
+.page-footer{text-align:center;color:#6f8c92;margin-top:22px}
+
+#painting-list{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;align-items:start;justify-items:center}
+
+.painting{text-align:center}
+.painting .title{color:#c65a5a;font-weight:600;font-size:1.2rem;margin:0 0 8px}
+.painting img{width:100%;max-width:240px;height:220px;object-fit:cover;border-radius:6px;display:block;margin:0 auto;cursor:pointer}
+.painting.framed img{border:8px solid #e1d6c2;box-shadow:inset 0 0 0 2px #b8aa90;border-radius:8px}
+
+.modal-figure{margin:12px 0 6px;text-align:center}
+#modalImage{max-width:100%;height:auto;border-radius:10px}
+
+
+@media (max-width:1000px){
+  .page{max-width:100%;padding:16px}
+  #painting-list{gap:16px}
+  .painting img{max-width:180px;height:170px}
+  .page-header h1{font-size:2.2rem}
+  .page-header h2{font-size:1.5rem}
+}
+
+
+@media (min-width:1500px){
+  .page{max-width:1600px}
+  #painting-list{gap:28px}
+  .painting img{max-width:260px;height:230px}
+}
