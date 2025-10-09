@@ -7,7 +7,8 @@
       "duration": "3–4 days",
       "budget": "$$",
       "img_name": "images/chicagohome.png",
-      "blurb": "Architecture, lakefront paths, world-class museums, and a legendary food scene."
+      "blurb": "Architecture, lakefront paths, world-class museums, and a legendary food scene.",
+      "detail_link": "chicago.html"
     },
     {
       "_id": 2,
@@ -17,7 +18,8 @@
       "duration": "Weekend trip",
       "budget": "$$",
       "img_name": "images/queens2.png",
-      "blurb": "Flushing food courts, LIC skyline parks, Citi Field, and global neighborhoods."
+      "blurb": "Flushing food courts, LIC skyline parks, Citi Field, and global neighborhoods.",
+      "detail_link": "blog-queens.html"
     },
     {
       "_id": 3,
@@ -27,7 +29,8 @@
       "duration": "4–5 days",
       "budget": "$$$",
       "img_name": "images/london1.jpeg",
-      "blurb": "Royal landmarks, world-class museums, bustling markets, and Thames river walks."
+      "blurb": "Royal landmarks, museums, markets, and Thames river walks.",
+      "detail_link": "blog-london.html"
     },
     {
       "_id": 4,
@@ -37,7 +40,8 @@
       "duration": "5–7 days",
       "budget": "$$$",
       "img_name": "images/tokyo.jpeg",
-      "blurb": "Temples, neon districts, amazing street food, and spotless high-speed transit."
+      "blurb": "Temples, neon districts, amazing street food, and spotless transit.",
+      "detail_link": "blog-tokyo.html"
     },
     {
       "_id": 5,
@@ -47,7 +51,8 @@
       "duration": "1 week",
       "budget": "$$",
       "img_name": "images/coastaltown.jpeg",
-      "blurb": "Turquoise water, palm-lined beaches, and a perfect spot for lazy afternoons."
+      "blurb": "Turquoise water, palm-lined beaches, and lazy afternoons.",
+      "detail_link": "activities.html"
     },
     {
       "_id": 6,
@@ -57,7 +62,8 @@
       "duration": "3–4 days",
       "budget": "$",
       "img_name": "images/mountvilage.jpeg",
-      "blurb": "Scenic hikes, breathtaking overlooks, and cozy family-friendly trail loops."
+      "blurb": "Scenic hikes, overlooks, and cozy family-friendly trails.",
+      "detail_link": "activities.html"
     },
     {
       "_id": 7,
@@ -67,7 +73,8 @@
       "duration": "2–3 days",
       "budget": "$$",
       "img_name": "images/oldtown.jpeg",
-      "blurb": "Old town squares, cobblestones, café culture, and preserved historic landmarks."
+      "blurb": "Old squares, cobblestones, café culture, and preserved landmarks.",
+      "detail_link": "destinations.html"
     },
     {
       "_id": 8,
@@ -76,8 +83,9 @@
       "category": "Culture",
       "duration": "Half day",
       "budget": "$",
-      "img_name": "images/the-lourve.jpeg",
-      "blurb": "An iconic collection of art and history housed in a globally famous museum."
+      "img_name": "images/the-louvre.jpg",
+      "blurb": "An iconic collection of art and history in a striking building.",
+      "detail_link": "activities.html"
     }
   ]
   
