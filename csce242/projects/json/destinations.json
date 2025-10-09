@@ -1,6 +1,83 @@
 [
     {
-        "_id":1,
-        "img":"chicagohome.png"
+      "_id": 1,
+      "title": "Chicago",
+      "location": "Illinois, USA",
+      "category": "City & Culture",
+      "duration": "3–4 days",
+      "budget": "$$",
+      "img_name": "images/chicagohome.png",
+      "blurb": "Architecture, lakefront paths, world-class museums, and a legendary food scene."
+    },
+    {
+      "_id": 2,
+      "title": "Queens",
+      "location": "New York, USA",
+      "category": "City & Culture",
+      "duration": "Weekend trip",
+      "budget": "$$",
+      "img_name": "images/queens2.png",
+      "blurb": "Flushing food courts, LIC skyline parks, Citi Field, and global neighborhoods."
+    },
+    {
+      "_id": 3,
+      "title": "London",
+      "location": "England, UK",
+      "category": "City & Culture",
+      "duration": "4–5 days",
+      "budget": "$$$",
+      "img_name": "images/london1.jpeg",
+      "blurb": "Royal landmarks, world-class museums, bustling markets, and Thames river walks."
+    },
+    {
+      "_id": 4,
+      "title": "Tokyo",
+      "location": "Japan",
+      "category": "City & Culture",
+      "duration": "5–7 days",
+      "budget": "$$$",
+      "img_name": "images/tokyo.jpeg",
+      "blurb": "Temples, neon districts, amazing street food, and spotless high-speed transit."
+    },
+    {
+      "_id": 5,
+      "title": "Coastal Town",
+      "location": "Dominican Republic",
+      "category": "Beach & Relax",
+      "duration": "1 week",
+      "budget": "$$",
+      "img_name": "images/coastaltown.jpeg",
+      "blurb": "Turquoise water, palm-lined beaches, and a perfect spot for lazy afternoons."
+    },
+    {
+      "_id": 6,
+      "title": "Mountain Village",
+      "location": "Smoky Mountains, USA",
+      "category": "Mountains & Trails",
+      "duration": "3–4 days",
+      "budget": "$",
+      "img_name": "images/mountvilage.jpeg",
+      "blurb": "Scenic hikes, breathtaking overlooks, and cozy family-friendly trail loops."
+    },
+    {
+      "_id": 7,
+      "title": "Historic City",
+      "location": "Europe",
+      "category": "City & Culture",
+      "duration": "2–3 days",
+      "budget": "$$",
+      "img_name": "images/oldtown.jpeg",
+      "blurb": "Old town squares, cobblestones, café culture, and preserved historic landmarks."
+    },
+    {
+      "_id": 8,
+      "title": "World Museum",
+      "location": "Paris, France",
+      "category": "Culture",
+      "duration": "Half day",
+      "budget": "$",
+      "img_name": "images/the-lourve.jpeg",
+      "blurb": "An iconic collection of art and history housed in a globally famous museum."
     }
-]
+  ]
+  
