@@ -8,18 +8,24 @@
 <body>
   <div id="content">
     <header>
-      <h1>Beyond Boarders</h1>
+      <div class="header-bar">
+        <div class="logo"><img src="images/bblogo.png" alt="Beyond Boarders Logo"></div>
+        <h1>Beyond Boarders</h1>
+        <div class="profile"><img src="images/profile.jpeg" alt="Profile"><p class="profile-name">Petey</p></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="toggle-nav"><div></div><div></div><div></div></label>
+
       <nav id="main-nav">
-        <div id="toggle-nav"><div></div><div></div><div></div></div>
-        <ul id="nav-items" class="columns hide-small">
-          <li class="is-current"><a href="destinations.html">Destinations</a></li>
+        <ul class="columns hide-small">
           <li><a href="index.html">Home</a></li>
-          <li><a href="activities.html">Activities</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="destinations.html">Find your dream destination</a></li>
+          <li><a href="activities.html">Activities & Attractions</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
           <li><a href="about-us.html">Contact Us</a></li>
         </ul>
       </nav>
-      <h2>Destinations </h2>
     </header>
 
     <main id="destinations-list" class="columns"></main>

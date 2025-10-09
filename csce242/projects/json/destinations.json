@@ -68,7 +68,7 @@
     {
       "_id": 7,
       "title": "Historic City",
-      "location": "Europe",
+      "location": "South Carolina",
       "category": "City & Culture",
       "duration": "2–3 days",
       "budget": "$$",
@@ -78,12 +78,12 @@
     },
     {
       "_id": 8,
-      "title": "World Museum",
+      "title": "The Louvre",
       "location": "Paris, France",
       "category": "Culture",
       "duration": "Half day",
       "budget": "$",
-      "img_name": "images/the-louvre.jpg",
+      "img_name": "images/the-louvre.jpeg",
       "blurb": "An iconic collection of art and history in a striking building.",
       "detail_link": "activities.html"
     }
