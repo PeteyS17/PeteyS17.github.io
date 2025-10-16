@@ -1,0 +1,1 @@
+comst result = document.getElementById('contact-result')
