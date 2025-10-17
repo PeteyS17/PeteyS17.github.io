@@ -1,77 +1,56 @@
+
 (function () {
     const form = document.getElementById("contact-form");
     if (!form) return;
   
-    const resultEl = document.getElementById("contact-result");
-    const submitBtn = form.querySelector('button[type="submit"]');
+    const result = document.getElementById("contact-result");
+    const btn = document.getElementById("btn-send");
     const ENDPOINT = "https://api.web3forms.com/submit";
   
-    function setResult(text, type) {
-      if (!resultEl) return;
-      resultEl.className = type ? `status ${type}` : "status";
-      resultEl.style.display = "inline";
-      resultEl.textContent = text;
-    }
+    const setMessage = (msg, type = "") => {
+      result.textContent = msg;
+      result.className = type;
+      result.style.display = "block";
+    };
   
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
   
-      
       if (!form.checkValidity()) {
         form.reportValidity();
-        setResult("Please complete the required fields.", "err");
+        setMessage("Please complete the required fields.", "error");
         return;
       }
   
-      
       const hp = form.querySelector('input[name="botcheck"]');
-      if (hp && (hp.checked || (hp.value && hp.value.trim() !== ""))) return;
+      if (hp && hp.value.trim() !== "") return;
   
-      
-      const accessKey = form.querySelector('input[name="access_key"]');
-      if (!accessKey || !accessKey.value) {
-        setResult("Missing Web3Forms access_key.", "err");
-        return;
-      }
+      const data = Object.fromEntries(new FormData(form).entries());
   
-     
-      const payload = Object.fromEntries(new FormData(form).entries());
-      payload.subject = "New message from Beyond Boarders";
-      payload.from_name = payload.name || "Website Visitor";
-  
-      setResult("Please wait…");
-      if (submitBtn) submitBtn.disabled = true;
+      btn.disabled = true;
+      setMessage("Please wait…");
   
       try {
         const res = await fetch(ENDPOINT, {
           method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify(payload)
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(data),
         });
   
-        let data = null;
-        try { data = await res.json(); } catch {}
+        const json = await res.json();
   
-        if (res.ok && data && data.success !== false) {
-          setResult("Thanks! Your message was sent.", "ok");
+        if (res.ok && json.success) {
+          setMessage("Thanks! Your message was sent.", "ok");
           form.reset();
         } else {
-          
-          setResult((data && data.message) || `Error (status ${res.status})`, "err");
-          console.error("Web3Forms error:", res.status, data);
+          setMessage(json.message || "Something went wrong.", "error");
         }
       } catch (err) {
         console.error(err);
-        setResult("Network error—please try again.", "err");
+        setMessage("Network error — please try again.", "error");
       } finally {
-        if (submitBtn) submitBtn.disabled = false;
-        setTimeout(() => {
-          if (resultEl) {
-            resultEl.style.display = "none";
-            resultEl.textContent = "";
-            resultEl.className = "status";
-          }
-        }, 3000);
+        btn.disabled = false;
+        setTimeout(() => (result.style.display = "none"), 4000);
       }
     });
   })();
