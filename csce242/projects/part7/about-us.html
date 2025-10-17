@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
   <title>Contact Us — Beyond Boarders</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,13 +28,11 @@
     </header>
 
     <main>
-      <!-- Intro -->
       <section class="idea">
         <h2>About Beyond Boarders</h2>
         <p><strong>Beyond Boarders</strong> helps travelers find destinations, activities, and insider tips—fast.</p>
       </section>
 
-      <!-- Gallery -->
       <section class="gallery columns">
         <div class="tile">
           <img src="images/tourist.jpeg" alt="Travelers overlooking a city skyline" loading="lazy">
@@ -51,17 +48,20 @@
         </div>
       </section>
 
-      
       <section class="contact-grid" style="margin-top: var(--space-10);">
         <section class="one">
           <h3>Our Location</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24182.027424745662!2d-73.95676986539833!3d40.74545081883933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592bc7bab159%3A0x56156cc4c5ee8e31!2sLong%20Island%20City%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1760674013576!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            class="embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24182.027424745662!2d-73.95676986539833!3d40.74545081883933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592bc7bab159%3A0x56156cc4c5ee8e31!2sLong%20Island%20City%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1760674013576!5m2!1sen!2sus"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="one">
           <h3>Contact Us</h3>
-          <form method="POST" id="contact-form" novalidate>
-
+          <form method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="f7dbe5f3-ba73-4be0-8f3c-c65a9df2106a">
 
             <p>
@@ -75,13 +75,14 @@
             </p>
 
             <p><label for="message">Message:</label></p>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required minlength="10"></textarea>
 
             <input type="checkbox" name="botcheck" class="hidden" style="display:none">
 
-            <p><button id="btn-send" type="submit">Submit Form</button></p>
-
-            <div id="contact-result"></div>
+            <p class="actions">
+              <button id="btn-send" type="submit">Submit Form</button>
+              <span id="contact-result" aria-live="polite"></span>
+            </p>
           </form>
         </section>
       </section>
