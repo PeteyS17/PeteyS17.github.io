@@ -310,6 +310,7 @@ h2 { font-size: 1.25em; margin: 0 0 var(--space-6); }
   .story { grid-template-columns: 1fr; }
   .story-thumb { height: 180px; }
 }
+
 .contact-grid{
   display: grid;
   gap: 24px;
