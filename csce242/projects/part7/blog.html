@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel Blog — Beyond Boarders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div class="header-bar">
+        <div class="logo"><img src="images/bblogo.png" alt="Beyond Boarders Logo"></div>
+        <h1>Beyond Boarders</h1>
+        <div class="profile"><img src="images/profile.jpeg" alt="Profile"><p class="profile-name">Petey</p></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="toggle-nav"><div></div><div></div><div></div></label>
+
+      <nav id="main-nav">
+        <ul class="columns hide-small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Find your dream destination</a></li>
+          <li><a href="activities.html">Activities & Attractions</a></li>
+          <li class="is-current"><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="blog-shell">
+      <div class="blog-wrap">
+        <h2 class="blog-title">Travel Stories & Highlights</h2>
+
+        <article class="story">
+          <img class="story-thumb" src="images/queens2.png" alt="Queens skyline">
+          <div class="story-body">
+            <h3 class="story-h">Exploring Queens, New York</h3>
+            <p class="story-txt short">Queens is diverse and full of surprises. I loved exploring different neighborhoods...</p>
+            <a href="blog-queens.html" class="read-more">Read more...</a>
+            <p class="byline">— Travel Blogger</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img class="story-thumb" src="images/london1.jpeg" alt="London skyline">
+          <div class="story-body">
+            <h3 class="story-h">A Weekend in London</h3>
+            <p class="story-txt short">London is a city where history meets modern culture. On my first day, I visited...</p>
+            <a href="blog-london.html" class="read-more">Read more...</a>
+            <p class="byline">— Petey’s Journal</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img class="story-thumb" src="images/tokyo.jpeg" alt="Tokyo skyline">
+          <div class="story-body">
+            <h3 class="story-h">Adventures in Tokyo</h3>
+            <p class="story-txt short">Tokyo blends tradition and modern life seamlessly. I started with temples in Asakusa...</p>
+            <a href="blog-tokyo.html" class="read-more">Read more...</a>
+            <p class="byline">— Guest Contributor</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> PeteyS17.github.io — Beyond Boarders</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

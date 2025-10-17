@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home — Beyond Boarders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div class="header-bar">
+        <div class="logo"><img src="images/bblogo.png" alt="Beyond Boarders Logo"></div>
+        <h1>Beyond Boarders</h1>
+        <div class="profile"><img src="images/profile.jpeg" alt="Profile"><p class="profile-name">Petey</p></div>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="toggle-nav"><div></div><div></div><div></div></label>
+
+      <nav id="main-nav">
+        <ul class="columns hide-small">
+          <li class="is-current"><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Find your dream destination</a></li>
+          <li><a href="activities.html">Activities & Attractions</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="idea-img">
+        <img src="images/beach2.png" alt="Sunny beach with turquoise water and boardwalk">
+        <p>Find the right trip faster.</p>
+      </section>
+
+      <section class="idea">
+        <h2>Plan trips with clarity, not clutter</h2>
+        <p>Beyond Boarders keeps choices simple and pages calm so you can focus on where to go, not where to look.</p>
+      </section>
+
+      <!-- Top Destinations -->
+      <section class="gallery columns">
+        <a class="tile tile--link" href="chicago.html" aria-label="Open Chicago details">
+          <img src="images/chicagohome.png" alt="Chicago skyline at dusk" loading="lazy">
+          <p>Chicago</p>
+        </a>
+        <div class="tile">
+          <img src="images/london1.jpeg" alt="London skyline" loading="lazy">
+          <p>London</p>
+        </div>
+        <div class="tile">
+          <img src="images/tokyo.jpeg" alt="Tokyo city lights" loading="lazy">
+          <p>Tokyo</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> PeteyS17.github.io — Beyond Boarders</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
